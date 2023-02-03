@@ -18,21 +18,21 @@ function addIngredients(itemToAdd, ingredients) {
 }
 function formatPrice(price) {
   var formattedPrice = `$${price}`;
-return formattedPrice;
+  return formattedPrice;
 }
 
 function decreasePrice(price) {
   var decreasedPrice = (price -(price * 0.1));
-return decreasedPrice;
+  return decreasedPrice;
 }
 
 function createRecipe(title, ingredients, menuItemType) {
   var recipe = {
-title: title,
-ingredients: ingredients,
-type: menuItemType
+  title: title,
+  ingredients: ingredients,
+  type: menuItemType
   }
-  return recipe
+return recipe
 }
 
 module.exports = {
